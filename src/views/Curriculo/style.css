@@ -1,0 +1,316 @@
+
+
+.roll{
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border: none;
+
+}
+.roll:hover{
+    opacity: 0.7;
+}
+
+#logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    background:#024b61;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+}
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #024b61, #39A388, #024b61);
+    background-size: 130% 130%;
+    overflow: hidden;
+    /*animation: colors2 15s ease infinite;   */
+}
+
+@keyframes colors2 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 80% 30%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.nav-list{
+    list-style: none;
+    display: flex;
+
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+@media (max-width: 999px) {
+    .securri{
+        overflow-x: hidden;
+
+    }
+    .nav-list{
+        position: absolute;
+        top:8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background:#024b61;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+
+        display: none;
+
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+}
+.section-mae{
+    margin-top: 8vh;
+    min-width: 1850px;
+}
+.section-padrao{
+    width: 100%;
+    min-height: 50vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow-x: auto;
+    border-bottom-width: 10px;
+    border-bottom: #fff;
+}
+
+
+.section-final{
+    width: 100%;
+    min-height: 29vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow-x: auto;
+    border-bottom-width: 10px;
+    border-bottom: #fff;
+}
+.divisor{
+    height: 1px;
+    color: rgb(38, 44, 38);
+    width: 100%;
+}
+.title-name{
+    color: rgba(255, 255, 255, 0.815);
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size:54px;
+    letter-spacing: 1px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.title-name span{
+    color: #39A388;
+}
+
+.subtitle{
+    color: rgba(255, 255, 255, 0.815);
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    line-height: 30px;
+}
+
+.subtitle-a{
+    color: rgba(255, 255, 255, 0.815);
+    text-decoration: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size: 20px;
+}
+.subtitle-a:hover{
+    color: #39A388;
+    cursor: pointer;
+}
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
+  .social-icons .social-icon:hover {
+    background-color: #024b61;
+  }
+
+.text-about-big{
+    margin-top: 50px;
+    margin-bottom: 5rem;
+    color: rgba(255, 255, 255, 0.815);
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 300;
+
+}
+.text-about {
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.815);
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+.text-about-small{
+    color: rgba(255, 255, 255, 0.815);
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+.title{
+    color: rgba(255, 255, 255, 0.815);
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size:40px;
+    letter-spacing: 1px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.exp{
+    color: #DCDCDC;
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size:30px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.subtitle-exp{
+    color: #DCDCDC;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size:22px;
+    margin-bottom: 10px;
+}   
+
+.div-exp{
+    justify-content: space-between;
+    display: flex;
+}
+
+.tempo{
+    right: 0px;
+    color: rgba(255, 255, 255, 0.815);
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: system-ui, -apple-system, 'Helvetica', Arial, sans-serif;
+    font-size:16px;
+    letter-spacing: 1px;
+}
+
+.list-inline-item {
+    color: #024b61;
+    margin: 15px;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+.list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 50px;
+  }
+
+  .dev-icons {
+    font-size: 3rem;
+  }
+
+
+.list-comp{
+    margin: 10px;
+    
+}
+
+.list-comp-item{
+    margin-top: 15px;
+    list-style: none;
+    color: #024b61;
+    font-size: 1.5em;
+}
+
+.certificado{
+    display: inline-block;
+    padding: 10px;
+  
+  }
+  
+  .imagemcertificado{
+    margin: 10px;
+    width: 300px;
+  }
+  .imagemcertificado:hover{
+    transform: scale(1.5);
+    transition: all ease 0.5s;
+  }

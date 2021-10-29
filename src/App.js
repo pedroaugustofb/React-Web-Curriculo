@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Switch, Route, Redirect,BrowserRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import HomeController from './controllers/HomeController'
+import Curriculo from './views/Curriculo/Curriculo';
+
+
+const RedirectRouter = ({ component:  Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={(props) => {
+        return props.location.pathname !== "/" ? (
+          <Component {...props} />
+        ) : (
+          <Redirect
+            to={{ pathname: "/home", state: { from: props.location } }}
+          />
+        );
+      }}
+    />
   );
-}
-
-export default App;
+  
+  const App = () => {
+    return (
+        <BrowserRouter>
+                <Switch>
+                    <RedirectRouter exact path={["/home", "/"]} component={HomeController} />
+                    <Route exact path={"/curriculo"} component={Curriculo} />
+                </Switch>
+        </BrowserRouter>
+    );
+  };
+  
+  export default App;

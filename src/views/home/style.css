@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.h1-home  {
+    color: white;
+    font-size: 4em;
+    font-family: 'Roboto Mono', monospace;
+    padding: 15px 70px;
+    margin: 0px;
+
+}
+.texto-surpresa{
+    margin-top: 280px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 20px;
+}
+/*---------------------------------------------*/   
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #024b61, #39A388);
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 80% 30%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.text-button{
+    padding-top: 30px;
+    width: 1000px;
+    margin-top: 680px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+
+/*---------------------------------------------*/                                            
+.waves{
+    position: absolute ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    
+}
+
+.wave-1{
+    animation: moveWave-1 3s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave-1{
+    from{
+        transform: translateX(-110px);
+    }
+}
+.wave-2{
+    animation: moveWave-2 2.8s  ease-in-out infinite alternate;
+}
+
+@keyframes moveWave-2{
+    from{
+        transform: translateX(-90px);
+    }
+}
+.wave-3{
+    animation: moveWave-3 3s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave-3{
+    from{
+        transform: translateX(-50px);
+    }
+}
