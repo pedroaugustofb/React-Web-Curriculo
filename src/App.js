@@ -4,7 +4,6 @@ import { Switch, Route, Redirect,BrowserRouter } from "react-router-dom";
 import HomeController from './controllers/HomeController'
 import Curriculo from './views/Curriculo/Curriculo';
 
-
 const RedirectRouter = ({ component:  Component, ...rest }) => (
     <Route
       {...rest}
